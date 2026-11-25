@@ -1,0 +1,3 @@
+# Seul config.yml est utile au build
+*
+!config.yml

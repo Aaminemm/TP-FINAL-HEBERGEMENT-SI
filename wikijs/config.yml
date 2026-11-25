@@ -1,0 +1,18 @@
+# Configuration de Wiki.js (basée sur config.sample.yml)
+# Les valeurs de connexion viennent des variables d'environnement du conteneur :
+# aucun mot de passe n'est enregistré dans l'image ni dans Git.
+
+port: 3000
+bindIP: 0.0.0.0
+
+db:
+  type: postgres
+  host: $(DB_HOST:db)
+  port: $(DB_PORT:5432)
+  user: $(DB_USER:wikijs)
+  pass: $(DB_PASS)
+  db: $(DB_NAME:wiki)
+  ssl: false
+
+logLevel: info
+dataPath: ./data
