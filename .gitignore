@@ -1,3 +1,4 @@
 # Archive téléchargée à la main, inutile dans Git (le Dockerfile la télécharge)
 wikijs/*.tar.gz
 wikijs/tmp/
+wordpress/.env
